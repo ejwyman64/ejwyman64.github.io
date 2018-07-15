@@ -1,3 +1,3 @@
 All about me! Click the link! 
 
-[ejwyman64.github.io]
+[Click here!](ejwyman64.github.io)

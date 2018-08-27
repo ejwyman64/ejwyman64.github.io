@@ -229,9 +229,10 @@ a {
         align-content: flex-start;
     }
 
-    .projects a {
+    .proj-img {
         flex-basis: 300px;
         flex-grow: 1;
+        max-width: 300px;
     }
     /* ///////////////////////////////////// */
     /*---------- Footer ----------*/
@@ -279,9 +280,10 @@ a {
         font-size: 2rem;
     }
 
-    .projects a {
+    .proj-img {
         flex-basis: 40%;
         flex-shrink: unset;
+        max-width: 40%;
     }
 
     /* ///////////////////////////////////// */

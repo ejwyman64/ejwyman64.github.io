@@ -1,0 +1,305 @@
+
+/* ///////////// Consistent Styles ///////////// */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Chamagne-and-limousines;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Mobile ////////////////////////////// */
+
+@media (min-width: 200px) {
+
+    /* ///////////////////////////////// */
+    /*---------- Header ----------*/
+
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 10%;
+        padding-bottom: 10px;
+        background-color: #000;
+        }
+
+    .my-name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    .my-name h1 { 
+        font-family: Chamagne-and-limousines;
+        font-size: 2rem;
+        font-size: 20vw;
+        padding: auto;
+        margin: 0;
+    }
+
+    .emma {
+        color: #fff;
+    }
+
+    .profile-pic {
+        height: auto;
+        width: auto;
+        max-width: 15vw;
+        border-radius: 50%;
+        margin: auto 20px;
+    }
+
+    .wyman {
+        color: gold;
+    }
+
+    h2 {
+        padding-left: 40px;
+    }
+
+    .intro nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        color: white;
+        padding-left: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    /* //////////////////////////////////// */
+    /*---------- Main ----------*/
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    h3 {
+        align-self: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }       
+
+    p::first-letter {
+        font-weight: bold;
+        color: gold;
+        font-size: 4vw
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proj-img {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #000;
+        /* border-radius: 5px; */
+        box-shadow: 2px 2px 8px #000;
+    }
+
+    .proj-img img {
+        align-self: center;
+        height: auto; 
+        width: auto; 
+        max-width: 100%; 
+        /* border-radius: 5px 5px 0 0; */
+    }
+
+    figcaption {
+        padding: 10px;
+        font-size: 1.25rem;
+    }
+
+    /* ///////////////////////////////////// */
+    /*---------- Footer ----------*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    footer h6 {
+        margin: 0;
+    }
+
+ /* end Mobile ////////////////////////// */
+} 
+
+/* Medium ////////////////////////////// */
+@media (min-width: 600px) {
+
+    /* ///////////////////////////////// */
+    /*---------- Header ----------*/
+
+    .intro {
+        padding: 0 15%;
+    }
+
+    .my-name {
+        width: 90%
+    }
+
+    /* //////////////////////////////////// */
+    /*---------- Main ----------*/
+
+    main {
+        padding: 0 15%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    /* ///////////////////////////////////// */
+    /*---------- Footer ----------*/
+
+
+
+ /* end Medium ///////////////////////// */
+}
+
+/* Large ////////////////////////////// */
+@media (min-width: 600px) {
+
+    /* ///////////////////////////////// */
+    /*---------- Header ----------*/
+    .intro {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 50px;
+    }
+
+    .intro h1, h2 {
+        flex-grow: 1;
+    }
+
+    .intro nav {
+        flex-grow: 2;
+    }
+
+    /* //////////////////////////////////// */
+    /*---------- Main ----------*/
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 15%;
+    }
+
+    article {
+        flex-grow: 1;
+    }
+
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .projects a {
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+    /* ///////////////////////////////////// */
+    /*---------- Footer ----------*/
+
+
+    
+ /* end Large //////////////////////// */
+}
+
+@media (min-width: 900px) {
+
+    .my-name {
+        /* width: 70%; */
+    }
+
+}
+
+/* X-Large ////////////////////////////// */
+@media (min-width: 1150px) {
+
+    /* ///////////////////////////////// */
+    /*---------- Header ----------*/
+
+    .my-name {
+        width: 80%;
+    }
+
+    /* //////////////////////////////////// */
+    /*---------- Main ----------*/
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article {
+        flex-grow: 1;
+    }
+
+    article p {
+        padding-right: 20px;
+    }
+
+    article h3 {
+        font-size: 2rem;
+    }
+
+    .projects a {
+        flex-basis: 40%;
+        flex-shrink: unset;
+    }
+
+    /* ///////////////////////////////////// */
+    /*---------- Footer ----------*/
+
+
+    
+ /* end X-Large //////////////////////// */
+}
+
+/* Fonts ///////////////////////////// */
+
+@font-face {
+    font-family: "Chamagne-and-limousines";
+    src:url(../fonts/champagne-and-limousines/Champagne\ &\ Limousines.ttf);
+}
+
+@font-face {
+    font-family: "schoolkid";
+    src:url(../fonts/schoolkid/Schoolkid.ttf);
+}
